@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Rigidbody PlayerRb;
     [SerializeField] private GameObject SitPlayer;
     [SerializeField] private GameObject StayPlayer;
+    [SerializeField] Camera StayCamera;
+    [SerializeField] Camera SitCamera;
     private InputSystem PlayerInputSystem;
     public Vector2 mouseDelta;
      
@@ -49,9 +51,15 @@ public class PlayerController : MonoBehaviour
         Vector2 direction = PlayerInputSystem.Player.MoveVector2.ReadValue<Vector2>();
         Move(direction);
 
+        //Player rotation
         float mouseX = mouseDelta.x;
+        //Camera up/down rotation
+        float mouseY = mouseDelta.y;
         // Rotate function
         transform.Rotate(Vector3.up * mouseX * Time.deltaTime);
+
+        StayCamera.transform.Rotate(Vector3.left * mouseY * Time.deltaTime);
+        SitCamera.transform.Rotate(Vector3.left * mouseY * Time.deltaTime);
     }
     private void OnCollisionEnter(Collision collision) 
     {
@@ -60,11 +68,28 @@ public class PlayerController : MonoBehaviour
             isOnGround = true;
         }    
     }
+    void GroundCheck()
+{
+	RaycastHit hit;
+	float distance = 1f;
+	Vector3 dir = new Vector3(0, -1);
+
+	if(Physics.Raycast(transform.position, dir, out hit, distance))
+	{
+		isOnGround = true;
+	}
+	else
+	{
+		isOnGround = false;
+	}
+}
+    
+
     private void Move(Vector2 direction)
     {   
         float scaleMoveSpeed = moveSpeed * Time.deltaTime;
         Vector3 moveDirection = new Vector3(direction.x, 0, direction.y);
-        PlayerRb.velocity += moveDirection * scaleMoveSpeed;
+        PlayerRb.AddRelativeForce(moveDirection * scaleMoveSpeed);
     }
     private void Jump()
     {

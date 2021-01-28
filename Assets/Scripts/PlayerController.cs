@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] public float moveSpeed;
     [SerializeField] public float jumpForce;
+    [SerializeField] bool playerSit;
+    [SerializeField] bool isOnGround;
     [SerializeField] Rigidbody PlayerRb;
     [SerializeField] GameObject SitPlayer;
     [SerializeField] GameObject StayPlayer;
@@ -14,7 +18,9 @@ public class PlayerController : MonoBehaviour
     {
         PlayerInputSystem = new InputSystem(); 
         PlayerInputSystem.Player.Jump.performed += context => Jump();
-        //PlayerInputSystem.Player.Sit.performed += contaxt => Sit();
+        PlayerInputSystem.Player.Sit.started += context => Sit();
+        PlayerInputSystem.Player.Sit.canceled += context => Stay();
+        
     }
     private void OnEnable() 
     {
@@ -34,7 +40,16 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Vector2 direction = PlayerInputSystem.Player.MoveVector2.ReadValue<Vector2>();
+        
+        
         Move(direction);
+    }
+    private void OnCollisionEnter(Collision collision) 
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnGround = true;
+        }    
     }
     private void Move(Vector2 direction)
     {   
@@ -44,16 +59,25 @@ public class PlayerController : MonoBehaviour
     }
     private void Jump()
     {
+        if (isOnGround)
+        {
         PlayerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        isOnGround = false;
+        }
     }
     private void Stay()
     {
+        playerSit = false;
         StayPlayer.SetActive(true);
         SitPlayer.SetActive(false);
     }
     private void Sit()
     {
+        if(!playerSit)
+        {
         StayPlayer.SetActive(false);
         SitPlayer.SetActive(true);
+        playerSit = false;
+        }
     }
 }

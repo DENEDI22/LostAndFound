@@ -56,7 +56,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""id"": ""0f2d2638-ce0a-4550-b9d3-59fae142c356"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(behavior=2)""
                 },
                 {
                     ""name"": ""Click"",

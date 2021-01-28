@@ -6,7 +6,7 @@
             "id": "f24d2d5d-d8d5-45ec-96c7-fe0fe2e26785",
             "actions": [
                 {
-                    "name": "Move Vector2",
+                    "name": "MoveVector2",
                     "type": "Value",
                     "id": "2482b9c4-ab5a-499c-81a3-512a6d958115",
                     "expectedControlType": "Vector2",
@@ -14,18 +14,10 @@
                     "interactions": ""
                 },
                 {
-                    "name": "MouseX",
-                    "type": "Value",
+                    "name": "MouseAxis",
+                    "type": "PassThrough",
                     "id": "f7d70277-b3d2-49ab-ab73-cd0b7defeee8",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "MouseY",
-                    "type": "Value",
-                    "id": "729cc901-c899-4ed3-a003-2540e8ee3c43",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
@@ -62,7 +54,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -73,7 +65,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -84,7 +76,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -95,7 +87,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -106,7 +98,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -117,7 +109,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -128,7 +120,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -139,7 +131,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -150,7 +142,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -161,7 +153,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -172,7 +164,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -183,7 +175,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -194,7 +186,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -205,7 +197,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -216,51 +208,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Move Vector2",
+                    "action": "MoveVector2",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
                     "id": "e5a559d9-9035-4a43-bb70-c865245c42e6",
-                    "path": "<Mouse>/position/x",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": " Keyboard + mouse",
-                    "action": "MouseX",
+                    "action": "MouseAxis",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "c3c29cdc-a4eb-4c4b-b5f3-1304ac08ab6b",
-                    "path": "<Gamepad>/rightStick/x",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "MouseX",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3999f673-11ad-45f6-a2c6-f6d6e42a58aa",
-                    "path": "<Mouse>/position/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": " Keyboard + mouse",
-                    "action": "MouseY",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b1625553-33e0-45de-bd85-e179ac6f26a8",
-                    "path": "<Gamepad>/leftStick/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "MouseY",
+                    "action": "MouseAxis",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

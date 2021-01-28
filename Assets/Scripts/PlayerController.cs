@@ -7,19 +7,26 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] public float moveSpeed;
+    [SerializeField] public float rotationSpeed;
     [SerializeField] public float jumpForce;
     [SerializeField] bool playerSit;
     [SerializeField] bool isOnGround;
     [SerializeField] Rigidbody PlayerRb;
-    [SerializeField] GameObject SitPlayer;
-    [SerializeField] GameObject StayPlayer;
-    private InputSystem PlayerInputSystem;    
+    [SerializeField] private GameObject SitPlayer;
+    [SerializeField] private GameObject StayPlayer;
+    private InputSystem PlayerInputSystem;
+    public Vector2 mouseDelta;
+     
     private void Awake() 
     {
         PlayerInputSystem = new InputSystem(); 
         PlayerInputSystem.Player.Jump.performed += context => Jump();
         PlayerInputSystem.Player.Sit.started += context => Sit();
         PlayerInputSystem.Player.Sit.canceled += context => Stay();
+        PlayerInputSystem.Player.MouseAxis.performed += context => mouseDelta = context.ReadValue<Vector2>();
+
+        
+        
         
     }
     private void OnEnable() 
@@ -40,9 +47,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Vector2 direction = PlayerInputSystem.Player.MoveVector2.ReadValue<Vector2>();
-        
-        
         Move(direction);
+
+        float mouseX = mouseDelta.x;
+        // Rotate function
+        transform.Rotate(Vector3.up * mouseX * Time.deltaTime);
     }
     private void OnCollisionEnter(Collision collision) 
     {
@@ -55,7 +64,7 @@ public class PlayerController : MonoBehaviour
     {   
         float scaleMoveSpeed = moveSpeed * Time.deltaTime;
         Vector3 moveDirection = new Vector3(direction.x, 0, direction.y);
-        transform.position += moveDirection * scaleMoveSpeed;
+        PlayerRb.velocity += moveDirection * scaleMoveSpeed;
     }
     private void Jump()
     {
@@ -80,4 +89,5 @@ public class PlayerController : MonoBehaviour
         playerSit = false;
         }
     }
+    
 }

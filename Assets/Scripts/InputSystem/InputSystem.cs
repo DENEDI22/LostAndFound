@@ -19,7 +19,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
             ""id"": ""f24d2d5d-d8d5-45ec-96c7-fe0fe2e26785"",
             ""actions"": [
                 {
-                    ""name"": ""Move Vector2"",
+                    ""name"": ""MoveVector2"",
                     ""type"": ""Value"",
                     ""id"": ""2482b9c4-ab5a-499c-81a3-512a6d958115"",
                     ""expectedControlType"": ""Vector2"",
@@ -27,18 +27,10 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""MouseX"",
-                    ""type"": ""Value"",
+                    ""name"": ""MouseAxis"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""f7d70277-b3d2-49ab-ab73-cd0b7defeee8"",
-                    ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""MouseY"",
-                    ""type"": ""Value"",
-                    ""id"": ""729cc901-c899-4ed3-a003-2540e8ee3c43"",
-                    ""expectedControlType"": ""Axis"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -75,7 +67,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -86,7 +78,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -97,7 +89,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -108,7 +100,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -119,7 +111,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -130,7 +122,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -141,7 +133,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -152,7 +144,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -163,7 +155,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -174,7 +166,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -185,7 +177,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -196,7 +188,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -207,7 +199,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -218,7 +210,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -229,51 +221,29 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Move Vector2"",
+                    ""action"": ""MoveVector2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
                     ""id"": ""e5a559d9-9035-4a43-bb70-c865245c42e6"",
-                    ""path"": ""<Mouse>/position/x"",
+                    ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""MouseX"",
+                    ""action"": ""MouseAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""c3c29cdc-a4eb-4c4b-b5f3-1304ac08ab6b"",
-                    ""path"": ""<Gamepad>/rightStick/x"",
+                    ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""MouseX"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3999f673-11ad-45f6-a2c6-f6d6e42a58aa"",
-                    ""path"": ""<Mouse>/position/y"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "" Keyboard + mouse"",
-                    ""action"": ""MouseY"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b1625553-33e0-45de-bd85-e179ac6f26a8"",
-                    ""path"": ""<Gamepad>/leftStick/y"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""MouseY"",
+                    ""action"": ""MouseAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -389,9 +359,8 @@ public class @InputSystem : IInputActionCollection, IDisposable
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_MoveVector2 = m_Player.FindAction("Move Vector2", throwIfNotFound: true);
-        m_Player_MouseX = m_Player.FindAction("MouseX", throwIfNotFound: true);
-        m_Player_MouseY = m_Player.FindAction("MouseY", throwIfNotFound: true);
+        m_Player_MoveVector2 = m_Player.FindAction("MoveVector2", throwIfNotFound: true);
+        m_Player_MouseAxis = m_Player.FindAction("MouseAxis", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Sit = m_Player.FindAction("Sit", throwIfNotFound: true);
         m_Player_Click = m_Player.FindAction("Click", throwIfNotFound: true);
@@ -445,8 +414,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_MoveVector2;
-    private readonly InputAction m_Player_MouseX;
-    private readonly InputAction m_Player_MouseY;
+    private readonly InputAction m_Player_MouseAxis;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Sit;
     private readonly InputAction m_Player_Click;
@@ -455,8 +423,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
         private @InputSystem m_Wrapper;
         public PlayerActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
         public InputAction @MoveVector2 => m_Wrapper.m_Player_MoveVector2;
-        public InputAction @MouseX => m_Wrapper.m_Player_MouseX;
-        public InputAction @MouseY => m_Wrapper.m_Player_MouseY;
+        public InputAction @MouseAxis => m_Wrapper.m_Player_MouseAxis;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Sit => m_Wrapper.m_Player_Sit;
         public InputAction @Click => m_Wrapper.m_Player_Click;
@@ -472,12 +439,9 @@ public class @InputSystem : IInputActionCollection, IDisposable
                 @MoveVector2.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveVector2;
                 @MoveVector2.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveVector2;
                 @MoveVector2.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveVector2;
-                @MouseX.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseX;
-                @MouseX.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseX;
-                @MouseX.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseX;
-                @MouseY.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseY;
-                @MouseY.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseY;
-                @MouseY.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseY;
+                @MouseAxis.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseAxis;
+                @MouseAxis.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseAxis;
+                @MouseAxis.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseAxis;
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
@@ -494,12 +458,9 @@ public class @InputSystem : IInputActionCollection, IDisposable
                 @MoveVector2.started += instance.OnMoveVector2;
                 @MoveVector2.performed += instance.OnMoveVector2;
                 @MoveVector2.canceled += instance.OnMoveVector2;
-                @MouseX.started += instance.OnMouseX;
-                @MouseX.performed += instance.OnMouseX;
-                @MouseX.canceled += instance.OnMouseX;
-                @MouseY.started += instance.OnMouseY;
-                @MouseY.performed += instance.OnMouseY;
-                @MouseY.canceled += instance.OnMouseY;
+                @MouseAxis.started += instance.OnMouseAxis;
+                @MouseAxis.performed += instance.OnMouseAxis;
+                @MouseAxis.canceled += instance.OnMouseAxis;
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
@@ -534,8 +495,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
     public interface IPlayerActions
     {
         void OnMoveVector2(InputAction.CallbackContext context);
-        void OnMouseX(InputAction.CallbackContext context);
-        void OnMouseY(InputAction.CallbackContext context);
+        void OnMouseAxis(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnSit(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);

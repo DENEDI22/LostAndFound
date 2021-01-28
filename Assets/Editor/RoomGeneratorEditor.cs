@@ -10,7 +10,6 @@ using UnityEngine;
 			base.OnInspectorGUI();
 			if (GUILayout.Button("Generate Objects"))
 			{
-
 				roomGenerator.GenerateObjects();
 			}
 

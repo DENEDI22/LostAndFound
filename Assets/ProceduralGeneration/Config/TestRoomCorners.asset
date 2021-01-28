@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: TestRoomCorners
   m_EditorClassIdentifier: 
   objectsToGenerate:
-  - gameObjectToPlace: {fileID: 4142716130271206471, guid: b9c8f75f56e0cdd41a9cee748459e30c, type: 3}
-    howMuchAvailable: 1
-  - gameObjectToPlace: {fileID: 7118888236306988802, guid: 43e6d9ec832eea645b2cdf801f7a4fac, type: 3}
-    howMuchAvailable: 10
   - gameObjectToPlace: {fileID: 2014712046007927644, guid: 515261550ef615a4c95e1973fcbe88cd, type: 3}
     howMuchAvailable: 1
+    isNecessary: 0
+  - gameObjectToPlace: {fileID: 7118888236306988802, guid: 43e6d9ec832eea645b2cdf801f7a4fac, type: 3}
+    howMuchAvailable: 10
+    isNecessary: 0

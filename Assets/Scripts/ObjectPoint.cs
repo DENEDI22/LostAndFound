@@ -9,17 +9,18 @@ public class ObjectPoint : MonoBehaviour
 	public int generatingProbability = 100;
 
 	public GeneratingObjectsConfig config;
-	private GameObject m_generatedObject;
+	public GameObject m_generatedObject;
 
 	/// <summary>
-	/// GenerateObject in the point
+	/// Generate object in the point
 	/// </summary>
 	public void GenerateObject()
 	{
+		int generatedIndex = Random.Range(0, config.objectsToGenerate.Length);
 		if (Random.Range(0, 100) < generatingProbability && m_generatedObject == null)
 		{
 			m_generatedObject =
-				GameObject.Instantiate(config.objectsToGenerate[Random.Range(0, config.objectsToGenerate.Length)].gameObjectToPlace,
+				GameObject.Instantiate(config.objectsToGenerate[generatedIndex].gameObjectToPlace,
 					transform);
 		}
 	}

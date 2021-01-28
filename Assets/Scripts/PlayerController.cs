@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float jumpForce;
     [SerializeField] bool playerSit;
     [SerializeField] bool isOnGround;
+    [SerializeField] bool lowRoof;
     [SerializeField] Rigidbody PlayerRb;
     [SerializeField] private GameObject SitPlayer;
     [SerializeField] private GameObject StayPlayer;
@@ -51,6 +52,9 @@ public class PlayerController : MonoBehaviour
         Vector2 direction = PlayerInputSystem.Player.MoveVector2.ReadValue<Vector2>();
         Move(direction);
 
+        GroundCheck();
+        RoofCheck();
+
         //Player rotation
         float mouseX = mouseDelta.x;
         //Camera up/down rotation
@@ -69,20 +73,35 @@ public class PlayerController : MonoBehaviour
         }    
     }
     void GroundCheck()
-{
-	RaycastHit hit;
-	float distance = 1f;
-	Vector3 dir = new Vector3(0, -1);
+    {
+	    RaycastHit hit;
+	    float distance = 0.71f;
+	    
 
-	if(Physics.Raycast(transform.position, dir, out hit, distance))
-	{
-		isOnGround = true;
-	}
-	else
-	{
-		isOnGround = false;
-	}
-}
+	    if(Physics.Raycast(transform.position, Vector3.down, out hit, distance))
+	    {
+		        isOnGround = true;
+	    }
+	    else
+	    {
+	    	isOnGround = false;
+	    }
+    }
+    void RoofCheck()
+    {
+	    RaycastHit hit;
+	    float distance = 12f;
+	    
+
+	    if(Physics.Raycast(transform.position, Vector3.up, out hit, distance))
+	    {
+		    lowRoof = true;
+	    }
+	    else
+	    {
+	    	lowRoof = false;
+	    }
+    }
     
 
     private void Move(Vector2 direction)
@@ -101,9 +120,12 @@ public class PlayerController : MonoBehaviour
     }
     private void Stay()
     {
+        if(!lowRoof)
+        {
         playerSit = false;
         StayPlayer.SetActive(true);
         SitPlayer.SetActive(false);
+        }
     }
     private void Sit()
     {

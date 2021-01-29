@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Camera SitCamera;
     private InputSystem PlayerInputSystem;
     public Vector2 mouseDelta;
+    float m_CameraVerticalAngle = 0f;
+    
      
     private void Awake() 
     {
@@ -44,6 +46,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         PlayerRb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -62,8 +65,17 @@ public class PlayerController : MonoBehaviour
         // Rotate function
         transform.Rotate(Vector3.up * mouseX * Time.deltaTime);
 
-        StayCamera.transform.Rotate(Vector3.left * mouseY * Time.deltaTime);
-        SitCamera.transform.Rotate(Vector3.left * mouseY * Time.deltaTime);
+        //StayCamera.transform.Rotate(Vector3.left * mouseY * Time.deltaTime);
+        //SitCamera.transform.Rotate(Vector3.left * mouseY * Time.deltaTime);
+
+        m_CameraVerticalAngle += -mouseY * Time.deltaTime;
+
+        m_CameraVerticalAngle = Mathf.Clamp(m_CameraVerticalAngle, -89f, 89f);
+
+        StayCamera.transform.localEulerAngles = new Vector3(m_CameraVerticalAngle, 0, 0);
+        SitCamera.transform.localEulerAngles = new Vector3(m_CameraVerticalAngle, 0, 0);
+
+        
     }
     private void OnCollisionEnter(Collision collision) 
     {

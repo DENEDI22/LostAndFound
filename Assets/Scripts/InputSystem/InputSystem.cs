@@ -241,7 +241,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""id"": ""c3c29cdc-a4eb-4c4b-b5f3-1304ac08ab6b"",
                     ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""ScaleVector2(x=40,y=40)"",
                     ""groups"": ""Gamepad"",
                     ""action"": ""MouseAxis"",
                     ""isComposite"": false,

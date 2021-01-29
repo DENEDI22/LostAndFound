@@ -13,10 +13,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool isOnGround;
     [SerializeField] bool lowRoof;
     [SerializeField] Rigidbody PlayerRb;
+    [SerializeField] private GameObject PlayerHead;
     [SerializeField] private GameObject SitPlayer;
     [SerializeField] private GameObject StayPlayer;
     [SerializeField] Camera StayCamera;
-    [SerializeField] Camera SitCamera;
     private InputSystem PlayerInputSystem;
     public Vector2 mouseDelta;
     float m_CameraVerticalAngle = 0f;
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
         m_CameraVerticalAngle = Mathf.Clamp(m_CameraVerticalAngle, -89f, 89f);
 
         StayCamera.transform.localEulerAngles = new Vector3(m_CameraVerticalAngle, 0, 0);
-        SitCamera.transform.localEulerAngles = new Vector3(m_CameraVerticalAngle, 0, 0);
+        
 
         
     }
@@ -134,6 +134,7 @@ public class PlayerController : MonoBehaviour
     {
         if(!lowRoof)
         {
+        StayCamera.transform.position = new Vector3(transform.position.x, (transform.position.y + 1.8f), transform.position.z);
         playerSit = false;
         StayPlayer.SetActive(true);
         SitPlayer.SetActive(false);
@@ -143,6 +144,7 @@ public class PlayerController : MonoBehaviour
     {
         if(!playerSit)
         {
+        StayCamera.transform.position = new Vector3(transform.position.x, (transform.position.y + 0.8f), transform.position.z);
         StayPlayer.SetActive(false);
         SitPlayer.SetActive(true);
         playerSit = false;

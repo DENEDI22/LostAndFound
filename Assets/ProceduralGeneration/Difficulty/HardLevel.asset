@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f6b1941ea0343c08881202e814d5a4d, type: 3}
+  m_Name: HardLevel
+  m_EditorClassIdentifier: 
+  name: 
+  itemsNeeded: 2
+  flatLayouts:
+  - {fileID: 558727313272195174, guid: d37abc4a01676ba4784d8b0969a5251c, type: 3}
+  timeToFind: 0

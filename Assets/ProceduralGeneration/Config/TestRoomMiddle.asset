@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToGenerate:
   - gameObjectToPlace: {fileID: 5307220844657986447, guid: ae825e555c260cc47bc421bad4fb8c03, type: 3}
+    letRotate: 1
     howMuchAvailable: 4
   - gameObjectToPlace: {fileID: 1825657486242251850, guid: d2b31cac818c29d42952e2c65df40dcc, type: 3}
+    letRotate: 1
     howMuchAvailable: 1
   - gameObjectToPlace: {fileID: 1825657486242251850, guid: 89be705ac8b7ad04fb70481a58bc35d5, type: 3}
+    letRotate: 1
     howMuchAvailable: 6

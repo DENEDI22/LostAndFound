@@ -22,6 +22,10 @@ public class ObjectPoint : MonoBehaviour
 			m_generatedObject =
 				GameObject.Instantiate(config.objectsToGenerate[generatedIndex].gameObjectToPlace,
 					transform);
+			if (config.objectsToGenerate[generatedIndex].letRotate)
+			{
+				m_generatedObject.transform.Rotate(new Vector3(0, Random.Range(0, 360)));
+			}
 		}
 	}
 

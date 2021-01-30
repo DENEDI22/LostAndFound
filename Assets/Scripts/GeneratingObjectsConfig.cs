@@ -13,5 +13,6 @@ public class GeneratingObjectsConfig : ScriptableObject
 public class ObjectToGenerate
 {
 	public GameObject gameObjectToPlace;
+	public bool letRotate = false;
 	public int howMuchAvailable;
 }

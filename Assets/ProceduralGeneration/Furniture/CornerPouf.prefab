@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d467cefbc44ec2c4c93b315714afd4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  decorGeneratingProbability: 0
+  decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
   itemTypesSupported: 02000000
   isBusy: 0
 --- !u!1 &4619826113438630225
@@ -88,6 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d467cefbc44ec2c4c93b315714afd4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  decorGeneratingProbability: 0
+  decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
   itemTypesSupported: 00000000
   isBusy: 0
 --- !u!1 &7118888236306988802

@@ -295,7 +295,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""4a5bc358-6d15-4cb4-8334-f648a45a7d0d"",
                     ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap"",
                     ""processors"": """",
                     ""groups"": "" Keyboard + mouse"",
                     ""action"": ""Click"",

@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject StayPlayer;
     [SerializeField] Camera StayCamera;
     private InputSystem PlayerInputSystem;
+    private float playerHeight;
     public Vector2 mouseDelta;
     float m_CameraVerticalAngle = 0f;
     
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         PlayerRb = GetComponent<Rigidbody>();
+        playerHeight = StayPlayer.GetComponent<CapsuleCollider>().height;
         
     }
 
@@ -63,7 +65,7 @@ public class PlayerController : MonoBehaviour
         //Camera up/down rotation
         float mouseY = mouseDelta.y;
         // Rotate function
-        transform.Rotate(Vector3.up * mouseX * Time.deltaTime);
+        transform.Rotate(Vector3.up * mouseX * rotationSpeed * Time.deltaTime);
 
         //StayCamera.transform.Rotate(Vector3.left * mouseY * Time.deltaTime);
         //SitCamera.transform.Rotate(Vector3.left * mouseY * Time.deltaTime);
@@ -77,17 +79,11 @@ public class PlayerController : MonoBehaviour
 
         
     }
-    private void OnCollisionEnter(Collision collision) 
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isOnGround = true;
-        }    
-    }
+    
     void GroundCheck()
     {
 	    RaycastHit hit;
-	    float distance = 0.71f;
+	    float distance = 0.1f;
 	    
 
 	    if(Physics.Raycast(transform.position, Vector3.down, out hit, distance))
@@ -102,10 +98,10 @@ public class PlayerController : MonoBehaviour
     void RoofCheck()
     {
 	    RaycastHit hit;
-	    float distance = 12f;
+	    
 	    
 
-	    if(Physics.Raycast(transform.position, Vector3.up, out hit, distance))
+	    if(Physics.Raycast(transform.position, Vector3.up, out hit, playerHeight))
 	    {
 		    lowRoof = true;
 	    }

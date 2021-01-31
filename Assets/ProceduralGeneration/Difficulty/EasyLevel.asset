@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6b1941ea0343c08881202e814d5a4d, type: 3}
   m_Name: EasyLevel
   m_EditorClassIdentifier: 
-  name: 
-  itemsNeeded: 0
+  name: The only one
+  itemsNeeded: 2
   flatLayouts: []
-  timeToFind: 0
+  timeToFind: 300

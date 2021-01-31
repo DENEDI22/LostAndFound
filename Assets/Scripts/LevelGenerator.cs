@@ -11,6 +11,7 @@ using Random = UnityEngine.Random;
 public class LevelGenerator : MonoBehaviour
 {
 	[SerializeField] private DifficultyConfig m_difficultyConfig;
+	[SerializeField] private GameObject level;
 	[SerializeField] private GameObject player;
 	public ObjectToFind[] objectsToFind;
 	[SerializeField] private ObjectToFind[] allObjectsThatCanBeHiden;
@@ -35,7 +36,6 @@ public class LevelGenerator : MonoBehaviour
 		}
 		
 		//setting up level
-		var level = Instantiate(m_difficultyConfig.flatLayouts[Random.Range(0, m_difficultyConfig.flatLayouts.Length)]);
 		foreach (var VARIABLE in level.GetComponentsInChildren<RoomGenerator>())
 		{
 			VARIABLE.levelGenerator = this;
@@ -45,8 +45,10 @@ public class LevelGenerator : MonoBehaviour
 
 		//spawning necessary items
 		foreach (var VARIABLE in objectsToFind)
-		{ 
-			Container.FindContaierForObject(containers.ToArray(), VARIABLE.itemType).spawnObject(VARIABLE.gameView);
+		{
+			GameObject _obj;
+			Container.FindContaierForObject(containers.ToArray(), VARIABLE.itemType).spawnObject(VARIABLE.gameView, out _obj);
+			_obj.GetComponent<ObjectToFInd>().GenerateID();
 		}
 		
 		//Locking objects and spawning keys

@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 1
   decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
-  itemTypesSupported: 00000000
+  itemTypesSupported: 0000000001000000
   isBusy: 0
 --- !u!1 &1847975087472134848
 GameObject:
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 1
   decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
-  itemTypesSupported: 00000000
+  itemTypesSupported: 0100000000000000
   isBusy: 0
 --- !u!1 &4185305955357862412
 GameObject:

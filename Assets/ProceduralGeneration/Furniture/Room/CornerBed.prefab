@@ -145,6 +145,20 @@ Transform:
   m_Father: {fileID: 5866741336840634451}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &2915884756595683121
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879920237364480764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: db2ded63075b6cd41aaa7d8a85da232d, type: 3}
 --- !u!1 &5141546518258875256
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +205,7 @@ GameObject:
   - component: {fileID: 3648278574115977583}
   - component: {fileID: 566653311997162928}
   - component: {fileID: 7253686282572061253}
+  - component: {fileID: 6422895758315344136}
   m_Layer: 0
   m_Name: base
   m_TagString: Untagged
@@ -261,6 +276,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6422895758315344136
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6092831392715081868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300008, guid: a66f756b6810535438053fc6a961a201, type: 3}
 --- !u!1 &7360596067855491169
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +602,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9a21eb46837654f4f84d01d31001741d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db2ded63075b6cd41aaa7d8a85da232d, type: 3}
+--- !u!1 &2879920237364480764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: db2ded63075b6cd41aaa7d8a85da232d, type: 3}
+  m_PrefabInstance: {fileID: 2879920237364382812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2879920237364778716 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: db2ded63075b6cd41aaa7d8a85da232d, type: 3}

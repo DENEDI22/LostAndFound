@@ -104,7 +104,7 @@ GameObject:
   m_Layer: 0
   m_Name: Light2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -133,11 +133,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cde338bebbd367d43933cfe901d7c204, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.742
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde338bebbd367d43933cfe901d7c204, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.484
+      value: -2.481
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde338bebbd367d43933cfe901d7c204, type: 3}
       propertyPath: m_LocalPosition.z

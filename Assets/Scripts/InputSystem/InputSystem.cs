@@ -230,7 +230,7 @@ public class @InputSystem : IInputActionCollection, IDisposable
                     ""id"": ""e5a559d9-9035-4a43-bb70-c865245c42e6"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""ScaleVector2(x=30,y=30)"",
                     ""groups"": "" Keyboard + mouse"",
                     ""action"": ""MouseAxis"",
                     ""isComposite"": false,

@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] public float moveSpeed;
+    [SerializeField] public float maxVelocity;
     [SerializeField] public float rotationSpeed;
     [SerializeField] public float jumpForce;
     [SerializeField] bool playerSit;
@@ -75,8 +76,11 @@ public class PlayerController : MonoBehaviour
         m_CameraVerticalAngle = Mathf.Clamp(m_CameraVerticalAngle, -89f, 89f);
 
         StayCamera.transform.localEulerAngles = new Vector3(m_CameraVerticalAngle, 0, 0);
-        
 
+        if (PlayerRb.velocity.magnitude > maxVelocity)
+        {
+	        PlayerRb.velocity = PlayerRb.velocity.normalized * maxVelocity;
+        }
         
     }
     

@@ -72,6 +72,9 @@ public class LevelGenerator : MonoBehaviour
 		var playerSpawnPoints = GameObject.FindGameObjectsWithTag("PlayerSpawnPoint");
 
 		player.transform.position = playerSpawnPoints[Random.Range(0, playerSpawnPoints.Length)].transform.position;
+		
+		//Setting timer
+		FindObjectOfType<Timer>().secondsLeft = m_difficultyConfig.timeToFind;
 	}
 }
 [Serializable]

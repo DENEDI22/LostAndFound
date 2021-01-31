@@ -7,11 +7,10 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
 	[SerializeField] private TextMeshProUGUI timerText;
-	private int secondsLeft;
+	public int secondsLeft;
 
 	public void StartTimer(int _timerSeconds)
 	{
-		secondsLeft = _timerSeconds;
 		StartCoroutine("TimerTick");
 	}
 

@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 0
   decorConfig: {fileID: 0}
-  itemTypesSupported: 
+  itemTypesSupported: 00000000
   isBusy: 0
 --- !u!1 &3516395594004554945
 GameObject:
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 0
   decorConfig: {fileID: 0}
-  itemTypesSupported: 
+  itemTypesSupported: 00000000
   isBusy: 0
 --- !u!1 &4137951715586433610
 GameObject:
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 0
   decorConfig: {fileID: 0}
-  itemTypesSupported: 
+  itemTypesSupported: 00000000
   isBusy: 0
 --- !u!1 &4838048174603273717
 GameObject:
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 0
   decorConfig: {fileID: 0}
-  itemTypesSupported: 
+  itemTypesSupported: 00000000
   isBusy: 0
 --- !u!1 &8184516373564161439
 GameObject:
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 0
   decorConfig: {fileID: 0}
-  itemTypesSupported: 
+  itemTypesSupported: 00000000
   isBusy: 0
 --- !u!1001 &1502622392910032273
 PrefabInstance:

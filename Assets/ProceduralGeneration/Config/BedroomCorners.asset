@@ -19,3 +19,6 @@ MonoBehaviour:
   - gameObjectToPlace: {fileID: 7118888236306988802, guid: 43e6d9ec832eea645b2cdf801f7a4fac, type: 3}
     letRotate: 0
     howMuchAvailable: 0
+  - gameObjectToPlace: {fileID: 8732761099476410577, guid: f5f0c9c1d81aa904eb6f35e49e4c8f74, type: 3}
+    letRotate: 0
+    howMuchAvailable: 0

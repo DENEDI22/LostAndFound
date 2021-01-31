@@ -25,3 +25,18 @@ MonoBehaviour:
   - gameObjectToPlace: {fileID: 4535480602535789402, guid: 25907687272dbf741ad3f566ef811ad1, type: 3}
     letRotate: 0
     howMuchAvailable: 0
+  - gameObjectToPlace: {fileID: 7206912930201337867, guid: fa2fa81b2008fd148b8d2aaf24502f94, type: 3}
+    letRotate: 0
+    howMuchAvailable: 0
+  - gameObjectToPlace: {fileID: 3189456547029959875, guid: 4cad47d11975aad49befa4b9be23d2e3, type: 3}
+    letRotate: 0
+    howMuchAvailable: 0
+  - gameObjectToPlace: {fileID: 2264801088509525651, guid: f248319c6b2b7ec4d89c83ec8004b0a5, type: 3}
+    letRotate: 0
+    howMuchAvailable: 0
+  - gameObjectToPlace: {fileID: 4838048174603273717, guid: bcaa0631840722d41821598508e4ecdf, type: 3}
+    letRotate: 0
+    howMuchAvailable: 0
+  - gameObjectToPlace: {fileID: 3189456547029959875, guid: 4cad47d11975aad49befa4b9be23d2e3, type: 3}
+    letRotate: 0
+    howMuchAvailable: 0

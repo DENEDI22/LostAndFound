@@ -6,5 +6,5 @@
 		public string name;
 		public int itemsNeeded;
 		public GameObject[] flatLayouts;
-		public float timeToFind;
+		public int timeToFind;
 	}

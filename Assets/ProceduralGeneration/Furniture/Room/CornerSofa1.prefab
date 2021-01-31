@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 1
   decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
-  itemTypesSupported: 0000000002000000
+  itemTypesSupported: 000000000200000001000000
   isBusy: 0
 --- !u!1 &2014712046007927644
 GameObject:
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 1
   decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
-  itemTypesSupported: 0000000002000000
+  itemTypesSupported: 000000000200000001000000
   isBusy: 0
 --- !u!1 &6261408275645325195
 GameObject:
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 1
   decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
-  itemTypesSupported: 0000000002000000
+  itemTypesSupported: 000000000200000001000000
   isBusy: 0
 --- !u!64 &1335313563491412859
 MeshCollider:
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorGeneratingProbability: 1
   decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
-  itemTypesSupported: 0000000002000000
+  itemTypesSupported: 000000000200000001000000
   isBusy: 0
 --- !u!1001 &7931331520841945499
 PrefabInstance:

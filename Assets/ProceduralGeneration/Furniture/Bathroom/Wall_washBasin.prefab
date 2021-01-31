@@ -81,6 +81,20 @@ MonoBehaviour:
   decorConfig: {fileID: 0}
   itemTypesSupported: 
   isBusy: 0
+--- !u!64 &1619373688618530234
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458371228508132229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: 2a7850605a17f504bbfdfaa591d5b419, type: 3}
 --- !u!1 &7674369613335988325
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +234,11 @@ PrefabInstance:
 --- !u!4 &3458371228508557217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400022, guid: 47af50246352ed14da4ade618d736175, type: 3}
+  m_PrefabInstance: {fileID: 3458371228508165431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3458371228508132229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100018, guid: 47af50246352ed14da4ade618d736175, type: 3}
   m_PrefabInstance: {fileID: 3458371228508165431}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8515355561612580725

@@ -94,6 +94,20 @@ MonoBehaviour:
   decorConfig: {fileID: 11400000, guid: b21585bf701786f43a8f934a0abdb768, type: 2}
   itemTypesSupported: 00000000
   isBusy: 0
+--- !u!64 &666663453743210330
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234944559453117521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 844581dbb36fdd242bcdb9cb96aab616, type: 3}
 --- !u!1 &7118888236306988802
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 75c3709e2bf1e9843b30f0c81dbe6b11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 75c3709e2bf1e9843b30f0c81dbe6b11, type: 3}
       propertyPath: m_LocalPosition.z
@@ -195,5 +209,10 @@ PrefabInstance:
 --- !u!4 &5234944559453470837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 75c3709e2bf1e9843b30f0c81dbe6b11, type: 3}
+  m_PrefabInstance: {fileID: 5234944559453084405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5234944559453117521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 75c3709e2bf1e9843b30f0c81dbe6b11, type: 3}
   m_PrefabInstance: {fileID: 5234944559453084405}
   m_PrefabAsset: {fileID: 0}

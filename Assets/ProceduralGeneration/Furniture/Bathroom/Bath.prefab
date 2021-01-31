@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1091511653677140422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091511653677140417}
+  m_Layer: 0
+  m_Name: Bath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1091511653677140417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091511653677140422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2161048163725370413}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1907042065466852294
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1091511653677140417}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.98300004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.012000084
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6170001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000034549197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000033527613
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd2c95417d13aab40b29a34d785f2780, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+      propertyPath: m_Name
+      value: Bath (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+--- !u!4 &2161048163725370413 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8511e7daa0ba26241a5a7cebfba2babe, type: 3}
+  m_PrefabInstance: {fileID: 1907042065466852294}
+  m_PrefabAsset: {fileID: 0}
